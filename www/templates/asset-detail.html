@@ -1,0 +1,19 @@
+<div class="modal slide-in-up" ng-controller="detailCtrl">
+    <header class="bar bar-header bar-calm">
+        <button class="button button-stable icon-left ion-ios7-arrow-left" ng-click="close()">&nbsp;Back</button>
+        <h1 class="title">Details</h1>
+        <button class="button button-positive icon-right ion-ios7-download-outline" ng-click="saveDetail()">Save&nbsp;</button>
+    </header>
+    <ion-content class="padding has-header">
+        <div class="list">
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Asset Name</span>
+                <input type="text" placeholder="ex : Asset #XXX" ng-model="item.item">
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">version</span>
+                <input type="text" placeholder="ex : 0.1" ng-model="item.version">
+            </label>
+        </div>
+    </ion-content>
+</div>

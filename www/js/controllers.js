@@ -80,6 +80,8 @@ angular.module('assetList.controllers', [])
 
 .controller('myListCtrl', function($rootScope, $scope, $window, $ionicModal, $firebase) {
     $rootScope.show("Please wait... Processing");
+    $scope.predicate = 'item';
+    $scope.reverse = false;
     $scope.list = [];
     var assetListRef = new Firebase($rootScope.baseUrl + escapeEmailAddress($rootScope.userEmail));
     assetListRef.on('value', function(snapshot) {
@@ -107,8 +109,17 @@ angular.module('assetList.controllers', [])
         $scope.newTemplate = modal;
     });
 
-    $scope.newTask = function() {
+    $scope.newAsset = function() {
         $scope.newTemplate.show();
+    };
+
+    $ionicModal.fromTemplateUrl('templates/asset-detail.html', function(modal) {
+        $scope.detailTemplate = modal;
+    });
+
+    $scope.showAsset = function(asset) {
+        $rootScope.currentAsset = asset;
+        $scope.detailTemplate.show();
     };
 
     $scope.markCompleted = function(key) {
@@ -169,6 +180,41 @@ angular.module('assetList.controllers', [])
         var assetListRef = new Firebase($rootScope.baseUrl + escapeEmailAddress($rootScope.userEmail));
         $firebase(assetListRef).$add(form);
         $rootScope.hide();
+
+    };
+})
+
+.controller('detailCtrl', function($rootScope, $scope, $window, $firebase) {
+    $scope.item = null;
+
+    $scope.$on('modal.shown', function() {
+        $scope.item = $rootScope.currentAsset;
+    });
+
+    $scope.close = function() {
+        $scope.modal.hide();
+    };
+
+    $scope.saveDetail = function() {
+        $scope.modal.hide();
+
+        $rootScope.show();
+
+        $rootScope.show("Please wait... Saving");
+
+        var itemRef = new Firebase($rootScope.baseUrl + escapeEmailAddress($rootScope.userEmail) + '/' + $scope.item.key);
+        itemRef.update({
+            item: $scope.item.item,
+            updated: Date.now()
+        }, function(error) {
+            if (error) {
+                $rootScope.hide();
+                $rootScope.notify('Oops! something went wrong. Try again later');
+            } else {
+                $rootScope.hide();
+                $rootScope.notify('Successfully updated');
+            }
+        });
 
     };
 })

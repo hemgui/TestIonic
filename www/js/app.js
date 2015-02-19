@@ -110,5 +110,14 @@ angular.module('assetList', ['ionic', 'firebase', 'assetList.controllers'])
                 }
             }
         })
+        .state('asset.synchronize', {
+            url: '/synchronize',
+            views: {
+                'asset-synchronize': {
+                    templateUrl: 'templates/asset-synchronize.html',
+                    controller: 'completedCtrl'
+                }
+            }
+        })
     $urlRouterProvider.otherwise('/auth/signin');
 });
