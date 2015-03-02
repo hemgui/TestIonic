@@ -1,0 +1,26 @@
+<ion-header-bar class="bar-calm">
+    <button class="button button-clear icon-left ion-plus-circled" ng-click="newAsset()">New</button>
+    <h1 class="title">My Asset List</h1>
+    <button class="button button-clear" ng-click="logout()">Logout</button>
+</ion-header-bar>
+
+<ion-content class="padding" has-tabs="true" on-refresh="onRefresh()">
+    <div class="padding-bottom">
+        <button ng-class="{'button-stable' : predicate == 'item','button-light': predicate == 'updated','ion-ios7-arrow-down': predicate == 'item' &&!reverse,'ion-ios7-arrow-up':predicate == 'item' && reverse}" class="button icon-right" ng-click="predicate = 'item';reverse=!reverse">Asset name</button>
+        <button ng-class="{'button-stable' : predicate == 'updated','button-light': predicate == 'item','ion-ios7-arrow-down':!reverse && predicate == 'updated','ion-ios7-arrow-up':reverse && predicate == 'updated'}" class="button icon-right" ng-click="predicate = 'updated';reverse=!reverse">Date</button>
+    </div>
+    <div class="list">
+        <a class="item item-avatar item-icon-right" ng-click="showAsset(item)" ng-repeat="item in list | orderBy:predicate:reverse" id="{{item.key}}">
+            <img src="http://lorempixel.com/50/50/?{{item.item}}">
+            <h2>{{ item.item }}</h2>
+            <h3>v : {{ item.version }} ({{item.updated | date:"dd/MM/yyyy 'à' HH:mm"}})</h3>
+            <i class="icon ion-ios7-arrow-right"></i>
+        </a>
+    </div>
+    <div class="card">
+        <div class="item item-text-wrap" ng-show="noData">
+            <span>No Items in your asset List. Click  <a href="javascript:" ng-click="newTask()">Here</a> and create one
+         </span>
+        </div>
+    </div>
+</ion-content>

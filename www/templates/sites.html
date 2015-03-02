@@ -1,0 +1,30 @@
+<ion-view view-title="Sites">
+    <ion-header-bar class="bar-stable bar-subheader">
+        <button class="button button-clear icon-left ion-funnel" ng-click="showFilterModal()">Filter</button>
+        <button class="button button-clear icon-left ion-archive" ng-click="">Download</button>
+    </ion-header-bar>
+    <ion-content class="padding">
+        <div class="list">
+            <p class="assertive" ng-show="error!='null'">{{error}}</p>
+            <div class="row sites-header">
+                <div class="col-10 col-center">Synchro</div>
+                <div class="col-50 col-center">Site Name</div>
+                <div class="col-20 col-center">Site Code</div>
+                <div class="col-20 col-center">City</div>
+            </div>
+            <div class="item site-item" collection-repeat="site in sites" collection-item-width="'100%'" collection-item-height="57" ng-click="showSiteAssets(site)">
+                <div class="row">
+                    <div class="col-10 col-center">
+                        <label class="checkbox">
+                            <input type="checkbox" ng-model="site.synchronized" ng-click="$event.stopPropagation();">
+                        </label>
+                    </div>
+                    <div class="col-50 col-center">{{site.site_name}}</div>
+                    <div class="col-20 col-center">{{site.site_code}}</div>
+                    <div class="col-20 col-center">{{site.city}}</div>
+                </div>
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>

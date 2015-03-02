@@ -1,0 +1,402 @@
+[{
+    "id": 1,
+    "guid": "ac829946-825f-4199-a0bd-57e462ca913b",
+    "city": "Situsari",
+    "creation_date": "2014-12-08 02:38:23",
+    "update_date": "2014-01-03 20:06:51",
+    "site_name": "B\u0026S Site 1",
+    "site_code": "S-01",
+    "synchronized": true
+}, {
+    "id": 2,
+    "guid": "886dafb5-e604-4450-bbca-b9bedca5c582",
+    "city": "Banepa",
+    "creation_date": "2013-12-21 05:15:58",
+    "update_date": "2014-12-09 08:04:18",
+    "site_name": "B\u0026S Site 2",
+    "site_code": "S-02"
+}, {
+    "id": 3,
+    "guid": "1255a239-031a-4ac4-b038-1f5e0e143257",
+    "city": "Rozhniv",
+    "creation_date": "2013-12-13 20:13:19",
+    "update_date": "2014-08-16 00:09:04",
+    "site_name": "B\u0026S Site 3",
+    "site_code": "S-03"
+}, {
+    "id": 4,
+    "guid": "52ffb82a-19e3-4df6-b576-5bddfec5b8d0",
+    "city": "Lyasny",
+    "creation_date": "2015-02-03 14:02:46",
+    "update_date": "2014-09-09 21:10:48",
+    "site_name": "B\u0026S Site 4",
+    "site_code": "S-04"
+}, {
+    "id": 5,
+    "guid": "93beb881-4742-48f5-bdf2-735f33ef22a1",
+    "city": "Lawrenceville",
+    "creation_date": "2014-04-25 18:32:43",
+    "update_date": "2014-02-19 05:58:12",
+    "site_name": "B\u0026S Site 5",
+    "site_code": "S-05"
+}, {
+    "id": 6,
+    "guid": "9d61e3a3-e612-418f-ae5a-5a762312b25e",
+    "city": "Mitú",
+    "creation_date": "2014-09-30 10:54:37",
+    "update_date": "2013-03-29 23:31:28",
+    "site_name": "B\u0026S Site 6",
+    "site_code": "S-06"
+}, {
+    "id": 7,
+    "guid": "fc0d410d-d51b-471c-ac21-0f6e7c12c34e",
+    "city": "Novopavlovsk",
+    "creation_date": "2014-02-20 04:50:07",
+    "update_date": "2015-01-31 23:08:02",
+    "site_name": "B\u0026S Site 7",
+    "site_code": "S-07"
+}, {
+    "id": 8,
+    "guid": "d3762369-d777-4a55-a944-c28c10066f56",
+    "city": "Simpang",
+    "creation_date": "2014-12-02 20:55:07",
+    "update_date": "2014-07-23 12:54:39",
+    "site_name": "B\u0026S Site 8",
+    "site_code": "S-08"
+}, {
+    "id": 9,
+    "guid": "32107530-6e04-4749-b409-803c282db2c5",
+    "city": "Quinchía",
+    "creation_date": "2013-11-20 22:03:02",
+    "update_date": "2013-04-16 17:54:11",
+    "site_name": "B\u0026S Site 9",
+    "site_code": "S-09"
+}, {
+    "id": 10,
+    "guid": "48fb3a97-20af-4c75-93a1-d35e31a58d1a",
+    "city": "Uberaba",
+    "creation_date": "2015-01-31 18:41:59",
+    "update_date": "2013-12-24 08:48:25",
+    "site_name": "B\u0026S Site 10",
+    "site_code": "S-010"
+}, {
+    "id": 11,
+    "guid": "1fc20c6a-2e92-44ce-b1dc-d73c8a95442f",
+    "city": "Wucun",
+    "creation_date": "2013-07-30 22:24:55",
+    "update_date": "2014-07-20 14:21:22",
+    "site_name": "B\u0026S Site 11",
+    "site_code": "S-011"
+}, {
+    "id": 12,
+    "guid": "6d34c498-0193-402e-aa43-10dbb64ab288",
+    "city": "Huibu",
+    "creation_date": "2014-12-27 05:45:25",
+    "update_date": "2014-05-26 10:27:45",
+    "site_name": "B\u0026S Site 12",
+    "site_code": "S-012"
+}, {
+    "id": 13,
+    "guid": "973448d3-1557-4fd5-bd4a-518cc8d11692",
+    "city": "Dampit",
+    "creation_date": "2013-04-06 06:00:12",
+    "update_date": "2013-03-24 00:29:02",
+    "site_name": "B\u0026S Site 13",
+    "site_code": "S-013"
+}, {
+    "id": 14,
+    "guid": "b27267b9-0e0f-4980-a77a-338f106b3cf5",
+    "city": "Thị Trấn Sìn Hồ",
+    "creation_date": "2014-01-31 17:13:20",
+    "update_date": "2013-09-05 23:38:22",
+    "site_name": "B\u0026S Site 14",
+    "site_code": "S-014"
+}, {
+    "id": 15,
+    "guid": "40173c82-8085-4e64-a52b-fc3e1374d4dd",
+    "city": "Cikandang",
+    "creation_date": "2014-05-16 20:09:37",
+    "update_date": "2014-01-17 21:00:02",
+    "site_name": "B\u0026S Site 15",
+    "site_code": "S-015"
+}, {
+    "id": 16,
+    "guid": "254f9658-4ef5-409d-874b-30c605129f97",
+    "city": "Clogherhead",
+    "creation_date": "2014-07-20 14:23:27",
+    "update_date": "2014-06-23 04:35:57",
+    "site_name": "B\u0026S Site 16",
+    "site_code": "S-016"
+}, {
+    "id": 17,
+    "guid": "f81277cc-091f-477a-99c8-d21c56cb39fb",
+    "city": "Tongren",
+    "creation_date": "2013-06-01 04:23:13",
+    "update_date": "2014-02-22 22:24:58",
+    "site_name": "B\u0026S Site 17",
+    "site_code": "S-017"
+}, {
+    "id": 18,
+    "guid": "e40bb24c-3bd4-458f-852e-9fa3a4ed63bc",
+    "city": "Jishui",
+    "creation_date": "2014-04-05 10:45:14",
+    "update_date": "2013-11-14 16:35:00",
+    "site_name": "B\u0026S Site 18",
+    "site_code": "S-018"
+}, {
+    "id": 19,
+    "guid": "05b30ec1-fde9-4757-a2bb-7b87e1276af8",
+    "city": "Hanjianglu",
+    "creation_date": "2014-08-16 02:37:14",
+    "update_date": "2013-12-08 14:52:14",
+    "site_name": "B\u0026S Site 19",
+    "site_code": "S-019"
+}, {
+    "id": 20,
+    "guid": "d297cddf-b1dc-4a61-93c3-d3c0d9cc71d2",
+    "city": "Sumy",
+    "creation_date": "2014-02-03 15:18:59",
+    "update_date": "2015-01-16 16:06:00",
+    "site_name": "B\u0026S Site 20",
+    "site_code": "S-020"
+}, {
+    "id": 21,
+    "guid": "a413dea9-92a1-4745-896f-2da5004cad2a",
+    "city": "Zhuping",
+    "creation_date": "2014-07-19 07:17:15",
+    "update_date": "2013-07-21 02:01:34",
+    "site_name": "B\u0026S Site 21",
+    "site_code": "S-021"
+}, {
+    "id": 22,
+    "guid": "105f3634-3572-43ae-a674-7e1ead32a81a",
+    "city": "Cortiçóis",
+    "creation_date": "2013-05-22 21:23:02",
+    "update_date": "2014-01-01 01:33:14",
+    "site_name": "B\u0026S Site 22",
+    "site_code": "S-022"
+}, {
+    "id": 23,
+    "guid": "0982d8a7-11ce-4edf-8bf0-a37d80da311e",
+    "city": "Angoulême",
+    "creation_date": "2013-12-04 06:26:50",
+    "update_date": "2014-10-07 08:40:54",
+    "site_name": "B\u0026S Site 23",
+    "site_code": "S-023"
+}, {
+    "id": 24,
+    "guid": "ad62dcde-f697-497e-b3ec-c175ddef920f",
+    "city": "Kanigorokrajan",
+    "creation_date": "2013-03-14 06:46:14",
+    "update_date": "2014-09-02 13:27:07",
+    "site_name": "B\u0026S Site 24",
+    "site_code": "S-024"
+}, {
+    "id": 25,
+    "guid": "2a478ac4-8201-45f6-8254-92ec1667efc9",
+    "city": "Zuogaiduoma",
+    "creation_date": "2013-04-13 03:28:09",
+    "update_date": "2014-12-28 08:20:19",
+    "site_name": "B\u0026S Site 25",
+    "site_code": "S-025"
+}, {
+    "id": 26,
+    "guid": "aefbf605-2873-414f-9478-f0131bcb9ed6",
+    "city": "Touying",
+    "creation_date": "2013-10-04 23:52:12",
+    "update_date": "2014-12-24 06:52:08",
+    "site_name": "B\u0026S Site 26",
+    "site_code": "S-026"
+}, {
+    "id": 27,
+    "guid": "d967e723-29d2-46c8-bdb9-9d3feaff3083",
+    "city": "Yambio",
+    "creation_date": "2013-06-25 13:13:53",
+    "update_date": "2014-06-05 08:15:47",
+    "site_name": "B\u0026S Site 27",
+    "site_code": "S-027"
+}, {
+    "id": 28,
+    "guid": "797f9212-b9d4-4e5a-97bc-d9e406911aa2",
+    "city": "Kan’onjichō",
+    "creation_date": "2013-07-01 09:17:35",
+    "update_date": "2013-02-11 10:55:27",
+    "site_name": "B\u0026S Site 28",
+    "site_code": "S-028"
+}, {
+    "id": 29,
+    "guid": "5d3209b6-3cf6-4000-9a55-b7e347067bb4",
+    "city": "Jeżów Sudecki",
+    "creation_date": "2014-07-11 20:12:30",
+    "update_date": "2014-12-26 17:48:17",
+    "site_name": "B\u0026S Site 29",
+    "site_code": "S-029"
+}, {
+    "id": 30,
+    "guid": "32d4afed-b054-4989-943a-657a6c69e0a7",
+    "city": "Sananduva",
+    "creation_date": "2013-12-07 01:29:11",
+    "update_date": "2014-01-21 05:11:12",
+    "site_name": "B\u0026S Site 30",
+    "site_code": "S-030"
+}, {
+    "id": 31,
+    "guid": "51ecfc90-f2a8-4526-8ee0-db18196c27e1",
+    "city": "Santa Adélia",
+    "creation_date": "2015-02-05 01:49:12",
+    "update_date": "2013-07-25 00:01:02",
+    "site_name": "B\u0026S Site 31",
+    "site_code": "S-031"
+}, {
+    "id": 32,
+    "guid": "cbd7b4b5-a2ae-4f4d-b9ac-1a4282bf19cc",
+    "city": "Chumphon Buri",
+    "creation_date": "2014-03-01 07:11:31",
+    "update_date": "2013-12-03 08:41:52",
+    "site_name": "B\u0026S Site 32",
+    "site_code": "S-032"
+}, {
+    "id": 33,
+    "guid": "ee29b30d-dcfd-445a-999d-f6c688b65102",
+    "city": "Popovi",
+    "creation_date": "2014-09-03 05:21:37",
+    "update_date": "2014-01-04 13:42:03",
+    "site_name": "B\u0026S Site 33",
+    "site_code": "S-033"
+}, {
+    "id": 34,
+    "guid": "43e367fb-bec2-4d86-ab69-bb6146e0b287",
+    "city": "Xinhua",
+    "creation_date": "2014-12-09 18:01:49",
+    "update_date": "2014-10-26 05:28:46",
+    "site_name": "B\u0026S Site 34",
+    "site_code": "S-034"
+}, {
+    "id": 35,
+    "guid": "a15addf0-8308-4d12-839f-3d8944ef9205",
+    "city": "Georgīevka",
+    "creation_date": "2013-09-01 06:25:26",
+    "update_date": "2014-03-09 01:19:06",
+    "site_name": "B\u0026S Site 35",
+    "site_code": "S-035"
+}, {
+    "id": 36,
+    "guid": "454b9e8e-eedc-4c2a-a57d-cc7e89f41d5d",
+    "city": "Tiouli",
+    "creation_date": "2013-02-25 05:49:38",
+    "update_date": "2015-01-09 16:58:08",
+    "site_name": "B\u0026S Site 36",
+    "site_code": "S-036"
+}, {
+    "id": 37,
+    "guid": "4b7643f3-996a-4b94-9a2b-fa46c4dcc644",
+    "city": "Ivanteyevka",
+    "creation_date": "2013-06-09 02:53:41",
+    "update_date": "2013-06-26 10:42:20",
+    "site_name": "B\u0026S Site 37",
+    "site_code": "S-037"
+}, {
+    "id": 38,
+    "guid": "104e3199-22db-42bd-95b0-941c5e9127c5",
+    "city": "Nusajaya",
+    "creation_date": "2015-01-12 20:36:43",
+    "update_date": "2015-02-08 18:05:07",
+    "site_name": "B\u0026S Site 38",
+    "site_code": "S-038"
+}, {
+    "id": 39,
+    "guid": "80039263-f36c-4c17-996e-80d0cc4be031",
+    "city": "Tambopata",
+    "creation_date": "2014-05-07 21:26:36",
+    "update_date": "2013-12-14 10:46:32",
+    "site_name": "B\u0026S Site 39",
+    "site_code": "S-039"
+}, {
+    "id": 40,
+    "guid": "62ca12eb-8e7d-4d7f-80b6-2267af41afbb",
+    "city": "Villa Carlos Paz",
+    "creation_date": "2014-01-23 09:49:07",
+    "update_date": "2014-09-14 14:07:51",
+    "site_name": "B\u0026S Site 40",
+    "site_code": "S-040"
+}, {
+    "id": 41,
+    "guid": "9ac7685a-8597-4697-99ba-bf51ee5e5272",
+    "city": "Tietê",
+    "creation_date": "2014-05-28 14:24:00",
+    "update_date": "2013-10-03 17:10:09",
+    "site_name": "B\u0026S Site 41",
+    "site_code": "S-041"
+}, {
+    "id": 42,
+    "guid": "956f7eba-c969-4d14-aae1-96c9e2f2e040",
+    "city": "Tours",
+    "creation_date": "2014-03-15 02:39:45",
+    "update_date": "2014-10-20 03:07:36",
+    "site_name": "B\u0026S Site 42",
+    "site_code": "S-042"
+}, {
+    "id": 43,
+    "guid": "dcd728b2-208d-4bee-a440-efa884f04324",
+    "city": "La Guata",
+    "creation_date": "2014-09-07 13:57:19",
+    "update_date": "2014-04-06 03:18:03",
+    "site_name": "B\u0026S Site 43",
+    "site_code": "S-043"
+}, {
+    "id": 44,
+    "guid": "d54e3b0b-69f2-49be-b57e-5c3797b66e69",
+    "city": "Sumberrejo",
+    "creation_date": "2014-02-27 20:50:53",
+    "update_date": "2014-12-10 10:23:38",
+    "site_name": "B\u0026S Site 44",
+    "site_code": "S-044"
+}, {
+    "id": 45,
+    "guid": "08593901-5ae0-4115-9550-7eddc3bb2f17",
+    "city": "Lençóis Paulista",
+    "creation_date": "2013-08-15 07:19:11",
+    "update_date": "2014-05-17 04:01:59",
+    "site_name": "B\u0026S Site 45",
+    "site_code": "S-045"
+}, {
+    "id": 46,
+    "guid": "c56a5ec8-3136-4ddd-b2d1-87a7ac6fe156",
+    "city": "Rozhniv",
+    "creation_date": "2013-08-15 21:26:03",
+    "update_date": "2014-09-01 20:42:40",
+    "site_name": "B\u0026S Site 46",
+    "site_code": "S-046"
+}, {
+    "id": 47,
+    "guid": "c8ed8eca-1bbc-448e-b8db-579427eb9164",
+    "city": "Ja Ela",
+    "creation_date": "2013-02-24 01:52:59",
+    "update_date": "2013-09-18 01:56:09",
+    "site_name": "B\u0026S Site 47",
+    "site_code": "S-047"
+}, {
+    "id": 48,
+    "guid": "57ff8a37-79e2-4aec-a15d-dad397d5b80b",
+    "city": "Lashkar Gāh",
+    "creation_date": "2013-10-04 08:11:46",
+    "update_date": "2014-09-21 18:47:47",
+    "site_name": "B\u0026S Site 48",
+    "site_code": "S-048"
+}, {
+    "id": 49,
+    "guid": "d3e20ae9-740c-4c87-9743-d2ecc3288c1a",
+    "city": "Xiangyang",
+    "creation_date": "2014-02-04 14:29:35",
+    "update_date": "2014-10-07 06:37:36",
+    "site_name": "B\u0026S Site 49",
+    "site_code": "S-049"
+}, {
+    "id": 50,
+    "guid": "133aa29e-7524-4e73-9937-1af4d50f4f39",
+    "city": "Casalinho",
+    "creation_date": "2013-10-16 08:29:22",
+    "update_date": "2014-09-19 20:57:32",
+    "site_name": "B\u0026S Site 50",
+    "site_code": "S-050"
+}]

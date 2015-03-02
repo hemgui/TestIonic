@@ -1,0 +1,28 @@
+<ion-header-bar class="bar-calm">
+    <h1 class="title">Completed Assets</h1>
+    <button class="button button-clear" ng-click="logout()">Logout</button>
+</ion-header-bar>
+<ion-content class="padding" has-tabs="true" on-refresh="onRefresh()">
+    <div class="padding-bottom">
+        <button class="button button-stable icon-left ion-ios7-arrow-down" ng-click="predicate = 'item'">Asset name</button>
+        <button class="button button-light icon-left ion-ios7-arrow-down" ng-click="predicate = 'updated'">Date</button>
+    </div>
+    <div class="list">
+        <a class="item item-avatar item-icon-right" href="#" ng-repeat="item in list | orderBy:predicate" id="{{item.key}}">
+            <img src="http://lorempixel.com/50/50/">
+            <h2>{{ item.item }}</h2>
+            <h3>v : {{ item.version }} ({{item.updated | date:"dd/MM/yyyy 'à' HH:mm"}})</h3>
+            <i class="icon ion-ios7-arrow-right"></i>
+        </a>
+    </div>
+    <div class="card">
+        <div class="item item-text-wrap" ng-show="noData || incomplete">
+            <span ng-show="incomplete">
+         You can have not completed any of your Asset items yet.
+         </span>
+            <span ng-show="noData">
+         No Items in your asset List.
+         </span>
+        </div>
+    </div>
+</ion-content>

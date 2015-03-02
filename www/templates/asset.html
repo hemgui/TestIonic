@@ -1,11 +1,114 @@
-<ion-tabs class="tabs-icon-top tabs-calm">
-    <ion-tab title="My assets" icon-on="ion-ios7-browsers" icon-off="ion-ios7-browsers-outline" href="#/asset/list">
-        <ion-nav-view name="asset-list"></ion-nav-view>
-    </ion-tab>
-    <ion-tab title="Completed" icon-on="ion-ios7-checkmark" icon-off="ion-ios7-checkmark-outline" href="#/asset/completed">
-        <ion-nav-view name="asset-completed"></ion-nav-view>
-    </ion-tab>
-    <ion-tab title="Synchronize" icon-on="ion-ios7-refresh" icon-off="ion-ios7-refresh-outline" href="#/asset/synchronize">
-        <ion-nav-view name="asset-synchronize"></ion-nav-view>
-    </ion-tab>
-</ion-tabs>
+<ion-view view-title="{{asset.asset_name}}">
+
+    <div class="tabs-striped tabs-top tabs-background-calm tabs-color-light">
+        <div class="tabs">
+            <a class="tab-item" ng-click="selectedTab='location'" ng-class="{'active' : selectedTab=='location'}">LOCATION</a>
+            <a class="tab-item" ng-click="selectedTab='client'" ng-class="{'active' : selectedTab=='client'}">CLIENT</a>
+            <a class="tab-item" ng-click="selectedTab='information'" ng-class="{'active' : selectedTab=='information'}">INFORMATION</a>
+            <a class="tab-item" ng-click="selectedTab='inspection'" ng-class="{'active' : selectedTab=='inspection'}">INSPECTION</a>
+        </div>
+    </div>
+    <ion-content class="padding has-subheader">
+        <div class="list" ng-hide="selectedTab!='location'">
+            <div class="row responsive-sm">
+                <div class="col col-50">
+                    <label class="item item-input item-stacked-label custom-stacked-input">
+                        <span class="input-label">Site Code</span>
+                        <input type="text" ng-model="site.site_code" placeholder="Site Code" ng-disabled="true">
+                    </label>
+                </div>
+                <div class="col col-50">
+                    <label class="item item-input item-stacked-label custom-stacked-input">
+                        <span class="input-label">Sub Location</span>
+                        <input type="text" ng-model="asset.sub_location_name" placeholder="Sub Location" ng-disabled="true">
+                    </label>
+                </div>
+            </div>
+            <div class="row responsive-sm">
+                <div class="col col-50">
+                    <label class="item item-input item-stacked-label custom-stacked-input">
+                        <span class="input-label">Site Name</span>
+                        <input type="text" ng-model="site.site_name" placeholder="Site Name" ng-disabled="true">
+                    </label>
+                </div>
+                <div class="col col-50">
+                    <label class="item item-input item-stacked-label custom-stacked-input">
+                        <span class="input-label">Sub Location Code</span>
+                        <input type="text" ng-model="asset.sub_location_code" placeholder="Sub Location Code" ng-disabled="true">
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="list" ng-hide="selectedTab!='client'">
+            <div class="row responsive-sm">
+                <div class="col col-33">
+                    <label class="item item-input item-stacked-label custom-stacked-input">
+                        <span class="input-label">Client Asset #</span>
+                        <input type="text" ng-model="asset.asset_number" placeholder="Client Asset #" ng-disabled="true">
+                    </label>
+                </div>
+                <div class="col col-33">
+                    <label class="item item-input item-stacked-label custom-stacked-input">
+                        <span class="input-label">Serial #</span>
+                        <input type="text" ng-model="asset.serial_number" placeholder="Serial #" ng-disabled="true">
+                    </label>
+                </div>
+                <div class="col col-33">
+                    <label class="item item-input item-stacked-label custom-stacked-input">
+                        <span class="input-label">Asset Type</span>
+                        <input type="text" ng-model="asset.asset_type" placeholder="Asset Type" ng-disabled="true">
+                    </label>
+                </div>
+            </div>
+            <div class="row responsive-sm">
+                <div class="col col-50">
+                    <label class="item item-input item-stacked-label custom-stacked-input">
+                        <span class="input-label">Asset Status</span>
+                        <input type="text" ng-model="asset.status" placeholder="Asset Status" ng-disabled="true">
+                    </label>
+                </div>
+                <div class="col col-50">
+                    <label class="item item-input item-stacked-label custom-stacked-input">
+                        <span class="input-label">Due Date</span>
+                        <input type="text" ng-model="asset.due_date" placeholder="Due Date" ng-disabled="true">
+                    </label>
+                </div>
+            </div>
+            <div class="row responsive-sm">
+                <div class="col col-50">
+                    <label class="item item-input item-stacked-label custom-stacked-input">
+                        <span class="input-label">Working Limits</span>
+                        <input type="text" ng-model="asset.working_limits" placeholder="Working Limits" ng-disabled="true">
+                    </label>
+                </div>
+                <div class="col col-50">
+                    <label class="item item-input item-stacked-label custom-stacked-input">
+                        <span class="input-label">Primary Description</span>
+                        <textarea ng-model="asset.primary_description" placeholder="Primary Description" ng-disabled="true"></textarea>
+                    </label>
+                </div>
+            </div>
+            <div class="row responsive-sm">
+                <div class="col col-50">
+                    <label class="item item-input item-stacked-label custom-stacked-input">
+                        <span class="input-label">Secondary Description</span>
+                        <textarea ng-model="asset.secondary_description" placeholder="Secondary Description" ng-disabled="true"></textarea>
+                    </label>
+                </div>
+                <div class="col col-50">
+                    <label class="item item-input item-stacked-label custom-stacked-input">
+                        <span class="input-label">Additional Description</span>
+                        <textarea ng-model="asset.additional_description" placeholder="Additional Description" ng-disabled="true" ng-change="resize"></textarea>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="list" ng-hide="selectedTab!='information'">
+            INFORMATION
+        </div>
+        <div class="list" ng-hide="selectedTab!='inspection'">
+            INSPECTION
+        </div>
+    </ion-content>
+</ion-view>

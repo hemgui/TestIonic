@@ -1,0 +1,20 @@
+<ion-view view-title="Assets">
+    <ion-content class="padding">
+        <div class="list">
+            <p class="assertive" ng-show="error!='null'">{{error}}</p>
+            <div class="row assets-header">
+                <div class="col-33 col-center">Asset Name</div>
+                <div class="col-33 col-center">Client Asset #</div>
+                <div class="col-33 col-center">Type</div>
+            </div>
+            <div class="item asset-item" collection-repeat="asset in assets" collection-item-width="'100%'" collection-item-height="50" ng-click="showAssetDetail(asset)">
+                <div class="row">
+                    <div class="col-33 col-center">{{asset.asset_name}}</div>
+                    <div class="col-33 col-center">{{asset.asset_number}}</div>
+                    <div class="col-33 col-center">{{asset.asset_type}}</div>
+                </div>
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>

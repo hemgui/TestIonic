@@ -1,0 +1,41 @@
+<ion-modal-view class="filter-modal">
+    <ion-header-bar class="bar bar-header bar-calm">
+        <h1 class="title">Filter</h1>
+        <button class="button button-clear button-primary" ng-click="hideFilterModal()">Cancel</button>
+    </ion-header-bar>
+    <ion-content class="padding">
+        <div class="list">
+            <div class="row responsive-sm">
+                <div class="col col-50">
+                    <label class="item item-input">
+                        <span class="input-label">Status</span>
+                        <select>
+                            <option selected>All</option>
+                            <option>Active</option>
+                            <option>Inactive</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="col col-50">
+                    <label class="item item-input">
+                        <input type="text" placeholder="Contract number">
+                    </label>
+                </div>
+            </div>
+            <div class="row responsive-sm">
+                <div class="col col-50">
+                    <label class="item item-input">
+                        <input type="text" placeholder="City">
+                    </label>
+                </div>
+                <div class="col col-50">
+                    <label class="item item-input">
+                        <input type="text" placeholder="Post Code">
+                    </label>
+                </div>
+            </div>
+
+            <button class="button button-block button-outline button-calm" ng-click="hideFilterModal()">Filter</button>
+        </div>
+    </ion-content>
+</ion-modal-view>

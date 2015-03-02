@@ -1,6 +1,6 @@
-angular.module('assetList', ['ionic', 'firebase', 'assetList.controllers'])
+angular.module('assetList', ['ngCordova', 'ionic', 'assetList.controllers'])
 
-.run(function($ionicPlatform, $rootScope, $firebaseAuth, $firebase, $window, $ionicLoading) {
+.run(function($ionicPlatform, $rootScope, $window, $ionicLoading, $state) {
     $ionicPlatform.ready(function() {
         // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
         // for form inputs)
@@ -10,11 +10,6 @@ angular.module('assetList', ['ionic', 'firebase', 'assetList.controllers'])
         if (window.StatusBar) {
             StatusBar.styleDefault();
         }
-
-        $rootScope.userEmail = null;
-        $rootScope.baseUrl = 'https://glaring-fire-1961.firebaseio.com/';
-        var authRef = new Firebase($rootScope.baseUrl);
-        $rootScope.auth = $firebaseAuth(authRef);
 
         $rootScope.show = function(text) {
             $rootScope.loading = $ionicLoading.show({
@@ -37,34 +32,90 @@ angular.module('assetList', ['ionic', 'firebase', 'assetList.controllers'])
             }, 1999);
         };
 
-        $rootScope.logout = function() {
-            $rootScope.auth.$logout();
-            $rootScope.checkSession();
-        };
-
-        $rootScope.checkSession = function() {
-            var auth = new FirebaseSimpleLogin(authRef, function(error, user) {
-                if (error) {
-                    // no action yet.. redirect to default route
-                    $rootScope.userEmail = null;
-                    $window.location.href = '#/auth/signin';
-                } else if (user) {
-                    // user authenticated with Firebase
-                    $rootScope.userEmail = user.email;
-                    $window.location.href = ('#/asset/list');
-                } else {
-                    // user is logged out
-                    $rootScope.userEmail = null;
-                    $window.location.href = '#/auth/signin';
-                }
-            });
-        }
+        $rootScope.state = $state;
     });
 })
 
 .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
-        .state('auth', {
+        .state('signin', {
+            url: '/sign-in',
+            templateUrl: 'templates/sign-in.html',
+            controller: 'SignInCtrl'
+        })
+        .state('app', {
+            url: "/app",
+            abstract: true,
+            templateUrl: "templates/menu.html"
+        })
+        .state('app.sites', {
+            url: "/sites",
+            views: {
+                'mainContent': {
+                    templateUrl: "templates/sites.html",
+                    controller: "SitesCtrl"
+                }
+            }
+        })
+        .state('app.help', {
+            url: "/help",
+            views: {
+                'mainContent': {
+                    templateUrl: "templates/help.html"
+                }
+            }
+        })
+        .state('app.assets', {
+            url: "/assets/:site_id",
+            views: {
+                'mainContent': {
+                    templateUrl: "templates/assets.html",
+                    controller: "AssetsCtrl"
+                }
+            }
+        })
+        .state('app.asset', {
+            url: "/asset/:asset_id",
+            views: {
+                'mainContent': {
+                    templateUrl: "templates/asset.html",
+                    controller: 'AssetCtrl'
+                }
+            }
+        })
+        /*.state('app.asset.location', {
+            url: "/location",
+            views: {
+                'asset-location': {
+                    templateUrl: "templates/asset-location.html"
+                }
+            }
+        })
+        .state('app.asset.client', {
+            url: "/client",
+            views: {
+                'asset-client': {
+                    templateUrl: "templates/asset-client.html"
+                }
+            }
+        })
+        .state('app.asset.information', {
+            url: "/information",
+            views: {
+                'asset-information': {
+                    templateUrl: "templates/asset-information.html"
+                }
+            }
+        })
+        .state('app.asset.inspection', {
+            url: "/inspection",
+            views: {
+                'asset-inspection': {
+                    templateUrl: "templates/asset-inspection.html"
+                }
+            }
+        })*/
+        /*.state('auth', {
             url: "/auth",
             abstract: true,
             templateUrl: "templates/auth.html"
@@ -118,6 +169,6 @@ angular.module('assetList', ['ionic', 'firebase', 'assetList.controllers'])
                     controller: 'completedCtrl'
                 }
             }
-        })
-    $urlRouterProvider.otherwise('/auth/signin');
+        })*/
+    $urlRouterProvider.otherwise('/sign-in');
 });

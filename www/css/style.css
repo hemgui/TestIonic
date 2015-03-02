@@ -1,1 +1,54 @@
+.card {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+/*filter modal*/
 
+@media (min-width: 680px) {
+    .filter-modal {
+        max-height: 250px;
+    }
+}
+.filter-modal select {
+    width: 100%;
+}
+/* sites */
+
+.site-item {
+    left: 0;
+    right: 0;
+    padding: 0;
+}
+.sites-header, .assets-header {
+    font-weight: bold;
+}
+/* assets */
+
+.asset-item {
+    left: 0;
+    right: 0;
+    padding: 10px;
+}
+.asset-tabs {
+    top: 97px;
+}
+/*asset detail*/
+
+.custom-stacked-input {
+    border: none;
+}
+.custom-stacked-input .input-label {
+    font-size: 14px;
+    color: #9e9e9e;
+}
+.custom-stacked-input input, .custom-stacked-input textarea {
+    font-size: 16px;
+    color: #000;
+    border-bottom: 1px solid #9e9e9e;
+    height: 60px;
+    overflow: hidden;
+}
+.custom-stacked-input input[disabled], .custom-stacked-input textarea[disabled] {
+    background: none;
+}
